@@ -1,0 +1,174 @@
+@import url('./global.css');
+@import url('./footer.css');
+
+/*----------------- intro ---------------*/
+.hero{
+  padding: 250px 0 100px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-wrapper{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.hero-title{
+  position: absolute;
+  top: 21%;
+}
+.hero-img img{
+  width: 100%;
+}
+.mint-now-btn{
+  position: absolute;
+  bottom:9%;
+  cursor: pointer;
+  z-index:3;
+}
+.mint-now-btn a img{
+  width: 80%;
+}
+.hero-bottom-img{
+  position: absolute;
+  bottom:-15%;
+  z-index: 2;
+}
+
+.hero-bottom-img img{
+width: 100%;
+
+}
+
+      /* {=============== Withdraw Initial Capital ================} */
+      .wihraw-header-content{
+        margin: auto;
+        width: 70%;
+      }
+      .withraw-header-title .withraw-title{
+        position: relative;
+      }
+.withraw-header-title .withraw-title::after{
+  background: var(--main-color);
+  content: '';
+  display: inline-block;
+  height: 0.2em;
+  width: 75%;
+}
+
+.witdraw-content{
+  margin: auto;
+  width: 50%;
+}
+.withdraw-content-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 40px;
+}
+.withdraw-card{
+  background: #321B38;
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+padding: 50px 30px;
+margin: 15px;
+color: var(--white-color);
+}
+.withdraw-card p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.withdraw-card h3{
+  font-size: 50px;
+  font-weight: 900;
+}
+.css-1ps6pg7-MuiPaper-root {
+  background: #321B38 !important;
+  background: linear-gradient(270deg, #461554 0%, rgba(48, 10, 58, 0) 100%);
+}
+.css-17zcy27.Target-root {
+  fill: var(--white-color) !important;
+}
+div#center-axis-container rect{
+  fill: var(--main-color);
+}
+.chart-box-wrapper .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1{
+background-color:none !important
+}
+
+/* =============================== Referral ========================= */
+.referral-container{
+  padding: 200px 0 100px 0;
+}
+.referral-title-name{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--white-color);
+  padding: 20px;
+  border-top: 1px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
+}
+.referral-link-item {
+  margin-top: 100px;
+  padding: 15px 40px;
+  border-radius: 6px;
+  border: 1px solid #A83FC6;
+}
+.referral-link-item button{
+  border: none;
+  background: none;
+  cursor: pointer; 
+}
+.referral-link-item .copy-text{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.referral-history-item{
+  margin-top: 120px;
+  text-align: left;
+}
+.referral-history-item h2{
+  position: relative;
+  font-size: 40px;
+  font-weight: 700;
+  color: #d4d3d3;
+  text-align: left;
+}
+.referral-history-item .underline{
+ margin: 20px 0;
+  border-bottom: 1px solid #b9b9b9;
+}
+.referral-history-item span{
+  padding-top: 10px;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+.referral-container-con{
+height: 80vh;
+}
+.referral-get-started-btn{
+  padding-top: 100px;
+  width: 220px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.referral-get-started-btn a{
+  font-size: 18px;
+}
