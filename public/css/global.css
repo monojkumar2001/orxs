@@ -9,6 +9,10 @@
     font-family: 'Rocky Rock';
     src: url(../fonts/Rocky\ Rock.ttf);
   }
+  @font-face {
+    font-family: 'Porcine-Heavy';
+    src: url(../fonts/Porcine-Heavy.ttf);
+  }
   /*===== VARIABLES CSS =====*/
   :root {
     /*========== Colors ==========*/
@@ -18,6 +22,7 @@
     --body-font: 'Roboto', sans-serif;
     --title-font:'Rocky Rock', sans-serif;
     --secondary-font:'Roboto', sans-serif;
+    --third-font:'Porcine-Heavy', sans-serif;
     --sec-title-font: 25px;
     --p-font: 18px;
     --l-title: 100px;
@@ -26,7 +31,7 @@
   
   @media screen and (max-width: 992px) {
     :root {
-      --l-title: 600px;
+      --l-title: 60px;
       --p-font: 16px;
     }
   }
@@ -63,15 +68,15 @@
     scroll-behavior: smooth;
   }
   
-  body {
+body {
     background-color: #040B11;
     background-image: url(../images/body-img.svg);
-    font-size: var(--p-font);
+    font-size: var(--p-font) !important;
     font-weight: 400;
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     line-height: var(--p-font-height);
     overflow-x: hidden;
-    color: #ffffff;
+    color: #ffffff !important;
   }
   
   img {

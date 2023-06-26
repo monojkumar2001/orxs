@@ -6,6 +6,7 @@
   padding: 250px 0 100px 0;
   position: relative;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -31,6 +32,10 @@
   bottom:9%;
   cursor: pointer;
   z-index:3;
+  transition: 0.4s;
+}
+.mint-now-btn:hover{
+  transform: scale(1.05);
 }
 .mint-now-btn a img{
   width: 80%;
@@ -38,137 +43,378 @@
 .hero-bottom-img{
   position: absolute;
   bottom:-15%;
-  z-index: 2;
+  z-index: 0;
 }
-
 .hero-bottom-img img{
 width: 100%;
-
 }
-
-      /* {=============== Withdraw Initial Capital ================} */
-      .wihraw-header-content{
-        margin: auto;
-        width: 70%;
-      }
-      .withraw-header-title .withraw-title{
-        position: relative;
-      }
-.withraw-header-title .withraw-title::after{
-  background: var(--main-color);
-  content: '';
-  display: inline-block;
-  height: 0.2em;
-  width: 75%;
+.hero-cloud-1{
+  position: absolute;
+  top: 30%;
+  animation: cloud-1 5s linear infinite alternate;
 }
+@keyframes cloud-1{
+  from{
+    transform: translateX(-200%);
+  }
+  to{
+    transform: translateX(60%);
+  }
+}
+.hero-cloud-1 img{
+  width: 80%;
+}
+.hero-cloud-2{
+  position: absolute;
+  top: 40%;
+  right: 0;
+  animation: cloud-2 5s linear infinite;
+}
+@keyframes cloud-2{
+  from{
+    transform: translateX(40%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+.hero-cloud-2 img{
+  width: 80%;
+}
+.hero-cloud-3{
+  position: absolute;
+  top: 50%;
+}
+.hero-cloud-3 img{
+  width: 80%;
+}
+/* ======================= Intro End ===================== */
 
-.witdraw-content{
+/* ================= Marque Start ======================== */
+.marque{
+  padding-top: 70px;
+}
+.marque-wrapper{
+  position: relative;
+  z-index: 11;
+  background: #0BB09F;
+}
+.marque-img-item {
+  transition: 0.4s;
+  cursor: pointer;
+}
+.marque-img-item:hover{
+  transform:scale(1.1);
+}
+.marque-img-item img{
+  width: 100%;
+}
+/* ================= Marque End ======================== */
+
+/* ===================== About Section Start ======================== */
+.about-header-content{
+  width: 70%;
   margin: auto;
-  width: 50%;
+  text-align: center;
 }
-.withdraw-content-card{
-  display: flex;
+.about-list-item{
+  border-radius: 70px;
+border: 1px solid #FFF;
+background: #112332;
+padding: 20px 40px;
+text-align: center;
+cursor: pointer;
+transition: 0.4s;
+}
+.about-list-item:hover{
+  transform: scale(1.05);
+}
+.about-list-item h3{
+  font-weight: 700;
+  font-family: var(--third-font);
+  font-size: 40px;
+  line-height: 50px;
+}
+.about-list-item span{
+  font-size: 30px;
+  font-weight: 700;
+}
+/* ===================== About Section End ======================== */
+
+/* ========================== Roadmap Start ================= */
+.roadmap-content{
+display: flex;
+flex-direction: column;
+gap: 70px;
+padding: 200px 0 150px 0;
+}
+.roadmap-content-item{
+  display: grid;
+  grid-template-columns: 29% 39% 29%;
+  gap: 30px;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 0 20px;
-  gap: 40px;
+  width: 100%;
 }
-.withdraw-card{
-  background: #321B38;
-border: 2px solid #FFFFFF;
-border-radius: 10px;
+.roadmap-img img{
+  width: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.roadmap-img img:hover{
+  transform: scale(1.1);
+}
+.road-num{
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.roadmap-number{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.roadmap-number::before{
+  content: '';
+    background-image: url(/images/road-1.svg);
+    width: 100%;
+    height: 550px;
+    right: -81px;
+    top: -170px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.roadmap-number::after{
+  content: '';
+  background: var(--white-color);
+  width: 200px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+
+}
+.roadmap-number p{
+  background:var(--white-color);
+  width: 200px; 
 display: flex;
 align-items: center;
 justify-content: center;
-flex-direction: column;
-text-align: center;
-padding: 50px 30px;
-margin: 15px;
-color: var(--white-color);
-}
-.withdraw-card p{
-  font-size: 18px;
-  font-weight: 500;
-}
-.withdraw-card h3{
-  font-size: 50px;
+  height: 200px;
+  font-size: 80px;
+  border-radius: 100%;
   font-weight: 900;
+  color: var(--black-color);
+  font-family: var(--title-font);
 }
-.css-1ps6pg7-MuiPaper-root {
-  background: #321B38 !important;
-  background: linear-gradient(270deg, #461554 0%, rgba(48, 10, 58, 0) 100%);
+.roadmap-content .roadmap-content-item-reverse:nth-child(2){
+  grid-template-columns: 29% 39% 29%;
+  direction: rtl;
 }
-.css-17zcy27.Target-root {
-  fill: var(--white-color) !important;
+.roadmap-content .roadmap-content-item-reverse:nth-child(4){
+  grid-template-columns: 29% 39% 29%;
+  direction: rtl;
 }
-div#center-axis-container rect{
-  fill: var(--main-color);
+.roadmap-content  .roadmap-content-item:nth-child(2) .roadmap-number p{
+  background-color: var(--main-color);
 }
-.chart-box-wrapper .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1{
-background-color:none !important
+.roadmap-content  .roadmap-content-item:nth-child(2) .roadmap-number::before{
+  content: '';
+    background-image: url(/images/road-2.svg);
+    width: 100%;
+    height: 350px;
+    right: -81px;
+    top: -70px;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
 }
-
-/* =============================== Referral ========================= */
-.referral-container{
-  padding: 200px 0 100px 0;
+.roadmap-content .roadmap-content-item:nth-child(4) .roadmap-number::before{
+  content: '';
+    background-image: url(/images/road-2.svg);
+    width: 100%;
+    height: 350px;
+    right: -81px;
+    top: -76px;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
 }
-.referral-title-name{
-  font-size: 40px;
-  font-weight: 700;
-  color: var(--white-color);
-  padding: 20px;
-  border-top: 1px solid #a3a3a3;
-  border-bottom: 1px solid #a3a3a3;
+.roadmap-content .roadmap-content-item:nth-child(2) .roadmap-number::after{
+  content: '';
+  background: var(--white-color);
+  width: 200px;
+  height: 5px;
+  position: absolute;
+left: 55%;
+z-index: -1;
 }
-.referral-link-item {
-  margin-top: 100px;
-  padding: 15px 40px;
-  border-radius: 6px;
-  border: 1px solid #A83FC6;
+.roadmap-content .roadmap-content-item:nth-child(4) .roadmap-number::after{
+  content: '';
+  background: var(--white-color);
+  width: 200px;
+  height: 5px;
+  position: absolute;
+left: 55%;
+z-index: -1;
 }
-.referral-link-item button{
-  border: none;
-  background: none;
-  cursor: pointer; 
+.roadmap-text-content .number-wrapper{
+border: 1px solid var(--white-color);
+background-color: var(--black-color);
+display: flex;
+align-items: center;
+gap: 60px;
 }
-.referral-link-item .copy-text{
-  margin-top: 10px;
-  font-size: 14px;
-}
-.referral-history-item{
-  margin-top: 120px;
-  text-align: left;
-}
-.referral-history-item h2{
-  position: relative;
-  font-size: 40px;
-  font-weight: 700;
-  color: #d4d3d3;
-  text-align: left;
-}
-.referral-history-item .underline{
- margin: 20px 0;
-  border-bottom: 1px solid #b9b9b9;
-}
-.referral-history-item span{
-  padding-top: 10px;
-  color: var(--white-color);
-  font-size: 18px;
-  font-weight: 600;
-}
-.referral-container-con{
-height: 80vh;
-}
-.referral-get-started-btn{
-  padding-top: 100px;
-  width: 220px;
-  margin-top: 50px;
+.roadmap-text-content .number-wrapper .num-count{
   display: flex;
   align-items: center;
-  margin: auto;
+  justify-content: center;
+  position: relative;
+}
+.roadmap-text-content .number-wrapper span{
+  background-color: var(--main-color);
+  height: 80px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--title-font);
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--black-color);
+}
+
+.roadmap-text-content .number-wrapper .num-count::before{
+  content: "";
+position: absolute;
+right: -40px;
+width: 50px;
+background-repeat: no-repeat;
+height: 30px;
+background-image: url(/images/road-arrow.svg);
+}
+.roadmap-text-content .number-wrapper h3{
+  font-family: var(--title-font);
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--white-color);
+  margin-bottom: 0;
+}
+.roadmap-text-content h2{
+ padding-top: 20px;
+ font-weight: 900;
+ font-size: 40px;
+ font-family: var(--title-font);
+ color: var(--white-color);
+ margin-bottom: 0;
+ padding-bottom: 10px;
+}
+.roadmap-content .roadmap-content-item:nth-child(2) .roadmap-text-content .number-wrapper{
+  flex-direction: row-reverse;
+}
+.roadmap-content .roadmap-content-item:nth-child(4) .roadmap-text-content .number-wrapper{
+  flex-direction: row-reverse;
+}
+/* ========================== Roadmap End ================= */
+
+/* ===================== Swiper Start  ============ */
+.next, .prev {
+  color: var(--white-color);
+  background: var(--main-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 10px;
+  box-shadow: 0px 10px 14px 4px rgba(108, 84, 234, 0.2);
+}
+.slider-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.slider-nav .prev{
+  background: var(--white-color);
+}
+/* ===================== Swiper End  ============ */
+.swiper-wrappers{
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items:center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide-img {
+  background-position: center;
+  background-size: cover;
+  width:100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* ============ check-it ==================== */
+.check-it{
+  padding: 150px 0 150px 0;
+} 
+.check-card-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid var(--white-color);
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: 0.4s;
+  width: 95%;
+}
+.check-card-item:hover{
+  transform: translateY(-10px);
+  transform: scale(1.02);
+}
+.check-card-item img{
+  width: 100%;
+  
+}
+.card-contents {
+  padding: 20px 20px 60px 20px;
+}
+.card-check-it-btn{
+  position: absolute;
+  bottom: -60px;
+  width: 80%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.referral-get-started-btn a{
-  font-size: 18px;
+.card-check-it-btn img{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
+.card-check-it-btn span{
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black-color);
+}
+/* ============ check-it ==================== */
