@@ -8,6 +8,8 @@ import RoadmapContent from "./roadmap/RoadmapContent";
 import RoadmapItem from "./roadmap/RoadmapItem";
 import SwiperItem from "./swiper/SwiperItem";
 import CheckItItem from "./checkITItem/CheckItItem";
+import Team from "./ourTeam/Team";
+import FaqQuestion from "./faq/FaqQuestion";
 
 function Home() {
  
@@ -118,6 +120,62 @@ function Home() {
         </div>
       </section>
       {/* =================== Card Items End ============ */}
+
+      {/* ====================== Our Team Start ======================== */}
+      <section id="team" className="team cpb-6">
+        <div className="container">
+          <div className="team-wrapper">
+            <h1 className="section-title">
+              OUR TEAM
+            </h1>
+            <div className="team-content">
+              <Team/>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ====================== Our Team End ======================== */}
+      {/* ================== FAQ Start ======================= */}
+      <section id="faq " className="faq cpb-6">
+        <div className="container">
+          <div className="faq-wrapper">
+            <h1 className="section-title">
+            FREQUENTLY ASKED
+<span> QUESTIONS</span>
+            </h1>
+          </div>
+          <div className="faq-content  cpt-6">
+            {/* <div className="faq-item"></div>
+            <div className="faq-item"></div>
+            <div className="faq-item"></div>
+            <div className="faq-item"></div> */}
+            <FaqQuestion/>
+          </div>
+        </div>
+      </section>
+      {/* ================== FAQ End ======================= */}
+      {/* =============== Join Community Start ===================== */}
+      <section id="join-community cpt-6" className="join-community">
+        <div className="container">
+          <div className="join-community-wrapper">
+            <div className="join-community-content  d-flex align-items-center justify-content-center flex-column w-60">
+            <h1 className="section-title">JOIN OUR COMMUNITY</h1>
+            <button className="discord-btn">
+              <img src="/images/discord-btn-bg.svg" alt="" />
+              <div className="discord-content">
+              <img src="/images/discord-icon.svg" alt="" />
+              <span>DISCORD</span>
+              </div>
+              
+            </button>
+            </div>
+            <div className="discord-img">
+              <img src="/images/discord-img.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =============== Join Community End ===================== */}
     </React.Fragment>
   );
 }
