@@ -15,9 +15,9 @@ function Home() {
       <div className="hero">
         <div className="container">
           <div className="hero-wrapper">
-            <h1 className="section-title hero-title">
+            {/* <h1 className="section-title hero-title">
               GET YOUR TOP NFT <span>WEBSITE HERE</span>
-            </h1>
+            </h1> */}
             <div className="hero-img">
               <img src="images/hero-img.gif" alt="" />
             </div>
@@ -39,7 +39,7 @@ function Home() {
       {/* =================== Hero Section End =================== */}
 
       {/* ===================== Marque Slider Start =============== */}
-      <section className="marque cpt-7 cpb-6 ">
+      <section className="marque cpb-6 ">
         <div className="marque-wrapper">
           <Marque />
         </div>

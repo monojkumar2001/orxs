@@ -54,7 +54,7 @@ function Header() {
 
               <li className="nav-list">
                 <Link to="/" className="logo-link">
-                  <img src="/images/logo.png" alt="" />
+                  <img src="/images/logo.png" alt="" className="logo-img" />
                 </Link>
               </li>
               <li className="nav-list">

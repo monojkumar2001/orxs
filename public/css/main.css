@@ -3,14 +3,20 @@
 
 /*----------------- intro ---------------*/
 .hero{
-  padding: 250px 0 100px 0;
+  padding: 200px 0 100px 0;
   position: relative;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
-
+.hero-img {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero-wrapper{
   width: 80%;
   margin: auto;
@@ -25,7 +31,7 @@
   top: 21%;
 }
 .hero-img img{
-  width: 100%;
+  width: 80%;
 }
 .mint-now-btn{
   position: absolute;
@@ -38,7 +44,7 @@
   transform: scale(1.05);
 }
 .mint-now-btn a img{
-  width: 80%;
+  width: 60%;
 }
 .hero-bottom-img{
   position: absolute;
@@ -89,7 +95,6 @@ width: 100%;
   width: 80%;
 }
 /* ======================= Intro End ===================== */
-
 /* ================= Marque Start ======================== */
 .marque{
   padding-top: 70px;

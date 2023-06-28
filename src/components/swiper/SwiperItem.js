@@ -13,6 +13,7 @@ const SwiperItem = () => {
     <Swiper
         effect={"coverflow"}
         grabCursor={true}
+        
         centeredSlides={true}
         slidesPerView={"4"}
         coverflowEffect={{
@@ -20,15 +21,18 @@ const SwiperItem = () => {
           stretch: 0,
           depth: 100,
           modifier: 1,
+          runCallbacksOnInit: true,
           slideShadows: true,
         }}
         navigation={{
           prevEl: ".prev",
           nextEl: ".next",
         }}
+        
         pagination={true}
         modules={[EffectCoverflow, Navigation, A11y]}
         className="mySwiper"
+       
       >
         <SwiperSlide>
           <img src="images/swiper-img1.svg" alt="" className="swiper-slide-img" />
