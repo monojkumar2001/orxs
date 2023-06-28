@@ -94,6 +94,9 @@ width: 100%;
 .marque{
   padding-top: 70px;
 }
+.marquee-container {
+  overflow: hidden !important;
+}
 .marque-wrapper{
   position: relative;
   z-index: 11;

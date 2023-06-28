@@ -43,7 +43,7 @@ function Header() {
               </li>
               <li className="nav-list">
                 <HashLink
-                  to="/white-paper"
+                  to="#about"
                   className="nav-link"
                   onClick={_toggleSidebar}
                 >
@@ -59,7 +59,7 @@ function Header() {
               </li>
               <li className="nav-list">
                 <HashLink
-                  to="/white-paper"
+                  to="#roadmap"
                   className="nav-link"
                   onClick={_toggleSidebar}
                 >
@@ -69,7 +69,7 @@ function Header() {
               </li>
               <li className="nav-list">
                 <HashLink
-                  to="/white-paper"
+                  to="#team"
                   className="nav-link"
                   onClick={_toggleSidebar}
                 >

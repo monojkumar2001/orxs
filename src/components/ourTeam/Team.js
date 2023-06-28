@@ -1,18 +1,10 @@
-import React from 'react'
-import { useState } from 'react'
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, A11y, EffectCoverflow,Thumbs , Pagination } from "swiper";
+import { Navigation, A11y, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import TeamItem from './TeamItem';
 const Team = () => {
-    const [teamActive, setTeamActive]=useState(1);
-    const handleTeamActive=(index)=>{
-        setTeamActive(index)
-    }
-    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const pagination = {
         clickable: true,
         renderBullet: (index, className) => {
@@ -27,28 +19,6 @@ const Team = () => {
       };
   return (
     <>
-    {/* <div className="team-header-item">
-        <div className={teamActive === 1 ? 'team-img active-team-img':"team-img"}
-        onClick={()=>handleTeamActive(1)}
-        >
-            <img src="/images/team-1.svg" alt="" />
-        </div>
-        <div className={teamActive === 2 ? 'team-img active-team-img':"team-img"}
-        onClick={()=>handleTeamActive(2)}
-        >
-            <img src="/images/team-2.svg" alt="" />
-        </div>
-        <div className={teamActive === 3 ? 'team-img active-team-img':"team-img"}
-        onClick={()=>handleTeamActive(3)}
-        >
-            <img src="/images/team-3.svg" alt="" />
-        </div>
-        <div className={teamActive === 4 ? 'team-img active-team-img':"team-img"}
-        onClick={()=>handleTeamActive(4)}
-        >
-            <img src="/images/team-4.svg" alt="" />
-        </div>
-    </div> */}
     <div className="team-content-item">
         <Swiper
         spaceBetween={30}
@@ -58,35 +28,20 @@ const Team = () => {
             prevEl:'.prev',
             nextEl:'.next'
         }}
-        // thumbs={{ swiper: thumbsSwiper }}
         modules={[Navigation, A11y,  Pagination ]}
         pagination={pagination}
         >
             <SwiperSlide>
-                <div className={teamActive ===1 ? 'team-items active-team-items' : 'team-items'}
-                >
-
-                <TeamItem title='BlankShy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
-                </div>
+            <TeamItem title='BlankShy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-                <div className={teamActive ===2 ? 'team-items active-team-items' : 'team-items'}
-                >
-<TeamItem title='BlankShysss' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
-                </div>
+            <TeamItem title='BlankShysss' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-                <div className={teamActive ===3 ? 'team-items active-team-items' : 'team-items'}
-                >
-
-<TeamItem title='BlanadsdfkShy' img='/images/team-img-1.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
-                </div>
+            <TeamItem title='BlanadsdfkShy' img='/images/team-img-1.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-                <div className={teamActive ===4 ? 'team-items active-team-items' : 'team-items'}
-                >
-                <TeamItem title='BlankSasdfdddhy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
-                </div>
+            <TeamItem title='BlankSasdfdddhy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             
         </Swiper>

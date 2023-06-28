@@ -1,0 +1,112 @@
+.mint{
+    padding: 350px 0 650px;
+    position: relative;
+}
+
+.mint-wrapper{
+    width: 80%;
+    margin: auto;
+    gap: 50px; 
+}
+.mint-header-content p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.mint-price-item{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+.mint-price-bg-img img{
+    width: 100%;
+}
+.mint-price-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+.mint-price{
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.mint-price:hover{
+    transform: scale(1.1);
+}
+.mint-price p{
+    position: absolute;
+    margin-bottom: 0;
+}
+.mint-count-item{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mint-count-item .mint-count{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.mint-count-plus{
+    position: relative;
+    border: none;
+    background: none;
+}
+.mint-count-plus span{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--white-color);
+}
+
+.count-text{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--white-color);
+}
+.mint-price .count-text{
+    color: var(--black-color);
+}
+.mint-btn{
+    border: none;
+    background: none;
+    position: relative;
+    transition: 0.4s;
+}
+.mint-btn:hover{
+    transform: scale(1.05);
+}
+.mint-btn span{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mint-left-img{
+    position: absolute;
+    left: 0;
+    bottom: 11%;
+}
+.mint-left-img img{
+    width: 100%;
+}
+.mint-right-img{
+    position: absolute;
+    right: 0;
+    bottom: 11%;
+}
+.mint-right-img img{
+    width: 100%;
+}
+.mint-footer-img{
+    position: absolute;
+    bottom: 0;
+}
+.mint-footer-img img{
+    width: 100%;
+}

@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Mint from "./components/Mint";
 function App() {
   useEffect(() => {
 		AOS.init();
@@ -19,6 +20,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/mint">
+            <Mint/>
           </Route>
           
         </Switch>
