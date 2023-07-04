@@ -1,0 +1,243 @@
+@media screen and (max-width: 1400px) {
+    .roadmap-number::before {
+        height: 532px;
+        right: -52px;
+        top: -166px;
+    }
+    .roadmap-content {
+        gap: 100px;
+    }
+    .roadmap-content .roadmap-content-item:nth-child(2) .roadmap-number::before {
+        right: -48px;
+    }
+    .roadmap-content .roadmap-content-item:nth-child(4) .roadmap-number::before {
+        right: -48px;
+    }
+    .roadmap-number::after {
+        z-index: -1;
+    }
+    .team-content-item .swiper-pagination {
+        width: 100% !important;
+        position: relative !important;
+        top: 10% !important;
+        padding-bottom: 100px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+    .team-content-item img.swiper-pagination-bullet {
+        width: 19%;
+        height: 197px;
+        margin: 20px;
+        border-radius: none;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .hero-content {
+        padding-bottom: 100px;
+    }
+    .roadmap-number::before {
+        display: none;
+    }
+    .road-num {
+        display: none;
+    }
+    .roadmap-content-item {
+        display: grid;
+        grid-template-columns: 48% 48% ;
+    }
+    .roadmap-content .roadmap-content-item-reverse:nth-child(2) {
+        grid-template-columns: 48% 48%;
+        direction: rtl;
+    }
+    .roadmap-content .roadmap-content-item-reverse:nth-child(4) {
+        grid-template-columns: 48% 48%;
+        direction: rtl;
+    }
+    .roadmap-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0 50px 0;
+    }
+    .discord-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .hero-content {
+        padding-bottom: 100px;
+    }
+    .hero {
+        padding: 150px 0 100px 0;
+    }
+    .about-header-content {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .check-card-item {
+        width: 100%;
+    }
+    .team-item-right img {
+        width: 81%;
+        margin: auto;
+    }
+    .team-item {
+        display: flex;
+        flex-direction: column;
+        background: var(--main-color);
+        border-radius: 30px;
+        gap: 50px;
+        padding: 50px 50px 0 50px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-content {
+        padding-bottom: 80px;
+    }
+    .hero {
+        padding: 150px 0 50px 0;
+    }
+    .hero-wrapper {
+        width: 100%;
+    }
+    .mint-now-btn a img {
+        width: 40%;
+    }
+    .about-list-item h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about-list-item span {
+        font-size: 20px;
+    }
+    .roadmap-content-item {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .roadmap-content .roadmap-content-item:nth-child(2) .roadmap-text-content .number-wrapper {
+        flex-direction: revert;
+    }
+    .roadmap-content .roadmap-content-item-reverse:nth-child(2) {
+        grid-template-columns: 100%;
+        direction: initial;
+    }
+    .roadmap-content .roadmap-content-item:nth-child(4) .roadmap-text-content .number-wrapper {
+        flex-direction: revert;
+    }
+    .roadmap-content .roadmap-content-item-reverse:nth-child(4) {
+        grid-template-columns: 100%;
+        direction: initial;
+    }
+    .roadmap-content-item {
+        gap: 20px;
+    }
+    .roadmap-content {
+        padding: 0px 0 0px 0;
+        gap: 0;
+    }
+    .roadmap-text-content h2 {
+        padding-top: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+    .roadmap-text-content p{
+        text-align: center;
+    }
+    .roadmap-text-content .number-wrapper span {
+        height: 61px;
+        width: 84px;
+        font-size: 28px;
+    }
+    .roadmap-text-content .number-wrapper h3 {
+        font-size: 28px;
+    }
+    .check-it {
+        padding: 80px 0 80px 0;
+    }
+    .team-content-item {
+        padding-top: 50px;
+    }
+    .team-content-item .swiper-pagination {
+        padding-bottom: 60px;
+    }
+    .team-content-item img.swiper-pagination-bullet {
+        height: 134px;
+    }
+    .join-community-wrapper {
+        border-radius: 24px;
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    .hero-content {
+        padding-bottom: 20px;
+    }
+    .hero {
+        padding: 150px 0 50px 0;
+    }
+    .hero-wrapper {
+        width: 100%;
+    }
+    .mint-now-btn a img {
+        width: 40%;
+    }
+    .marque-img-item img {
+        width: 75%;
+    }
+    .next, .prev {
+        width: 50px;
+        height: 50px;
+    }
+    .card-check-it-btn span {
+        font-size: 20px;
+    }
+    .card-check-it-btn {
+        bottom: -40px;
+    }
+    .card-check-it-btn img {
+        width: 70%;
+    }
+    .check-it {
+        padding: 80px 0 20px 0;
+    }
+    .team-content-item img.swiper-pagination-bullet {
+        height: 74px;
+    }
+    .team-content-item {
+        padding-top: 23px;
+    }
+    .team-content-item .swiper-pagination {
+        padding-bottom: 35px;
+    }
+    .team-item {
+        border-radius: 12px;
+        gap: 31px;
+        padding: 29px 20px 0 20px;
+    }
+    .team-item-right img {
+        width: 80%;
+        margin: auto;
+    }
+    .team-item-left {
+        padding-left: 0px;
+    }
+    .marquess{
+        padding: 0;
+    }
+    .faq-content {
+        width: 100%;
+        margin: auto;
+    }
+    .discord-btn-bg-img{
+        width: 100%;
+    }
+    .discord-img-icons{
+        width: 35px;
+    }
+    .join-community-wrapper .discord-btn .discord-content span {
+        font-size: 23px;
+    }
+}

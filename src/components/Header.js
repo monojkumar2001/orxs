@@ -52,7 +52,7 @@ function Header() {
                 </HashLink>
               </li>
 
-              <li className="nav-list">
+              <li className="nav-list nav-list-logo">
                 <Link to="/" className="logo-link">
                   <img src="/images/logo.png" alt="" className="logo-img" />
                 </Link>

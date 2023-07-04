@@ -15,25 +15,25 @@ function Home() {
       <div className="hero">
         <div className="container">
           <div className="hero-wrapper">
-            {/* <h1 className="section-title hero-title">
-              GET YOUR TOP NFT <span>WEBSITE HERE</span>
-            </h1> */}
-            <div className="hero-img">
-              <img src="images/hero-img.gif" alt="" />
-            </div>
-            <div className="nav-list mint-now-btn">
+            <div className="hero-content">
+            <h1 className="section-title">
+            GET YOUR TOP NFT <span>WEBSITE HERE</span>
+              </h1>
+              <div className="nav-list mint-now-btn">
               <Link to="/mint" className="nav-link">
                 <img src="images/mint-bg-img.svg" alt="" />
                 <span>MINT NOW</span>
               </Link>
             </div>
+            </div>
+  
           </div>
         </div>
-        {/* <div className="hero-cloud-1"><img src="images/cloud-1.svg" alt="" /></div>
-        <div className="hero-cloud-2"><img src="images/cloud-2.svg" alt="" /></div>
-        <div className="hero-cloud-3"><img src="images/cloud-3.svg" alt="" /></div> */}
         <div className="hero-bottom-img">
           <img src="images/hero-bottom-img.svg" alt="" />
+        </div>
+        <div className="hero-bottom-img2">
+          <img src="images/hero-bg-img-2.svg" alt="" />
         </div>
       </div>
       {/* =================== Hero Section End =================== */}
@@ -47,7 +47,7 @@ function Home() {
       {/* ===================== Marque Slider End   =============== */}
 
       {/* ================== About Section Start ================== */}
-      <section id="about" className="about cpb-6">
+      <section id="about" className="about cpb-6 cpt-7">
         <div className="container">
           <div className="about-wrapper">
             <div className="about-header-content">
@@ -87,7 +87,7 @@ function Home() {
       {/* ================== About Section End ================== */}
 
       {/* ================== Roadmap Section Start ================== */}
-      <section id="roadmap" className="roadmap cpb-6">
+      <section id="roadmap" className="roadmap cpt-7 cpb-6">
         <div className="container">
           <div className="roadmap-wrapper">
             <h1 className="section-title">ROADMAP</h1>
@@ -167,7 +167,7 @@ function Home() {
       {/* ====================== Our Team End ======================== */}
 
       {/* ===================== Marque Slider Start =============== */}
-      <section className="marque cpt-7 cpb-6 ">
+      <section className="marque  cpb-6  marquess">
         <div className="marque-wrapper">
           <Marque />
         </div>
@@ -190,15 +190,15 @@ function Home() {
       </section>
       {/* ================== FAQ End ======================= */}
       {/* =============== Join Community Start ===================== */}
-      <section id="join-community cpt-6" className="join-community">
+      <section id="join-community" className="join-community cpb-6">
         <div className="container">
           <div className="join-community-wrapper">
             <div className="join-community-content  d-flex align-items-center justify-content-center flex-column w-60">
               <h1 className="section-title">JOIN OUR COMMUNITY</h1>
               <button className="discord-btn">
-                <img src="/images/discord-btn-bg.svg" alt="" />
+                <img className="discord-btn-bg-img" src="/images/discord-btn-bg.svg" alt="" />
                 <div className="discord-content">
-                  <img src="/images/discord-icon.svg" alt="" />
+                  <img className="discord-img-icons" src="/images/discord-icon.svg" alt="" />
                   <span>DISCORD</span>
                 </div>
               </button>

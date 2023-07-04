@@ -136,6 +136,9 @@ header.header {
   li.nav-list {
     padding: 0px 10px;
   }
+  .logo-img {
+    width: 100px;
+}
 }
 @media screen and (max-width: 1300px) {
   nav.navigation {
@@ -150,6 +153,9 @@ header.header {
   .logo-nav{
     display: block;
   }
+  .nav-list-logo {
+    display: none;
+}
   nav.navigation {
     display: flex;
     align-items: center;
@@ -232,7 +238,7 @@ header.header {
   nav.navigation {
     grid-template-columns: 85%;
   }
-  a.logo-link img {
-    width: 100px;
-  }
+  nav.navigation .logo img {
+    width: 28%;
+}
 }

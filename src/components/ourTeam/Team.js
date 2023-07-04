@@ -35,13 +35,13 @@ const Team = () => {
             <TeamItem title='BlankShy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-            <TeamItem title='BlankShysss' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
+            <TeamItem title='BlankShysss' img='/images/team-img-2.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-            <TeamItem title='BlanadsdfkShy' img='/images/team-img-1.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
+            <TeamItem title='BlanadsdfkShy' img='/images/team-img-3.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-            <TeamItem title='BlankSasdfdddhy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
+            <TeamItem title='BlankSasdf dddhy' img='/images/team-img-4.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             
         </Swiper>

@@ -10,32 +10,26 @@
   align-items: center;
   justify-content: center;
 }
-.hero-img {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .hero-wrapper{
   width: 80%;
   margin: auto;
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+  text-align: center;
 }
-.hero-title{
-  position: absolute;
-  top: 21%;
-}
-.hero-img img{
-  width: 80%;
+.hero-content{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 200px;
 }
 .mint-now-btn{
-  position: absolute;
-  bottom:9%;
   cursor: pointer;
   z-index:3;
   transition: 0.4s;
@@ -48,8 +42,23 @@
 }
 .hero-bottom-img{
   position: absolute;
-  bottom:-15%;
+  bottom: -28%;
   z-index: 0;
+}
+.hero-bottom-img2{
+  position: absolute;
+  z-index: -1;
+  bottom: -22%;
+}
+.hero-bottom-img2 img{
+  width: 100%;
+}
+.hero-bottom-img3{
+  position: absolute;
+  bottom: -22%;
+}
+.hero-bottom-img3 img{
+width: 100%;
 }
 .hero-bottom-img img{
 width: 100%;
@@ -120,6 +129,9 @@ width: 100%;
 /* ================= Marque End ======================== */
 
 /* ===================== About Section Start ======================== */
+.about{
+
+}
 .about-header-content{
   width: 70%;
   margin: auto;
@@ -132,6 +144,8 @@ background: #112332;
 padding: 20px 40px;
 text-align: center;
 cursor: pointer;
+width: 100%;
+margin-bottom: 50px;
 transition: 0.4s;
 }
 .about-list-item:hover{
@@ -376,6 +390,10 @@ background-image: url(/images/road-arrow.svg);
   display: block;
   width: 100%;
 }
+.swiper-wrappers .swiper-pagination {
+  padding-bottom: 0;
+}
+
 
 /* ============ check-it  Start ==================== */
 .check-it{
@@ -389,7 +407,7 @@ background-image: url(/images/road-arrow.svg);
   position: relative;
   border: 2px solid var(--white-color);
   cursor: pointer;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   transition: 0.4s;
   width: 95%;
 }
@@ -466,12 +484,11 @@ padding-top: 100px;
 }
 .team-item{
   display: flex;
-  align-items: center;
   background: var(--main-color);
   border-radius: 30px;  
   gap: 50px;
-  padding: 30px 0 0 30px;
-  height: 450px;
+  padding: 50px 50px 0 50px;
+  height: 400px;
 }
 .team-item-left{
   padding-left: 40px;
@@ -481,6 +498,11 @@ padding-top: 100px;
 }
 .team-item-right img{
   width: 100%;
+}
+.team-item-right {
+  justify-content: flex-end;
+  display: flex;
+  align-items: end;
 }
 /* .team-items{
   display: none;
@@ -548,9 +570,6 @@ img.swiper-pagination-bullet {
 /* =================== Faq End =============== */
 
 /* ============== Join Community Start =========== */
-.join-community{
-  padding-bottom: 150px;
-}
 .join-community-wrapper{
   background-color: var(--black-color);
   border: 3px solid var(--white-color);
@@ -597,5 +616,8 @@ overflow-y: hidden;
   color: var(--black-color);
   font-family: var(--title-font);
   font-weight: 700;
+}
+.discord-btn-bg-img {
+  width: 80%;
 }
 /* ============== Join Community End =========== */

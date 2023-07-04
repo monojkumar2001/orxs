@@ -1,17 +1,11 @@
 .footer-wrapper {
   display: flex;
   align-items: center;
-  background: #381941;
-  padding: 50px 0;
+  background: #0A1825;
+  padding-top: 50px;
   justify-content: center;
   gap: 30px;
   flex-direction: column;
-}
-.footer-link ul {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-left: 0;
 }
 .footer-social-media {
   display: flex;

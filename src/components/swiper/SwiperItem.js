@@ -16,6 +16,7 @@ const SwiperItem = () => {
         
         centeredSlides={true}
         slidesPerView={"4"}
+        loop="true"
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -24,12 +25,25 @@ const SwiperItem = () => {
           runCallbacksOnInit: true,
           slideShadows: true,
         }}
+        // spaceBetween={0}
         navigation={{
           prevEl: ".prev",
           nextEl: ".next",
         }}
+         breakpoints={{
+                  360: {
+                    slidesPerView: 2,
+                  },
+                  1050: {
+                    slidesPerView: 3,
+                  },
+                  1300: {
+                    slidesPerView: 4,
+                  },
+                }}
         
         pagination={true}
+        // pagination={{ clickable: true, dynamicBullets: true }}
         modules={[EffectCoverflow, Navigation, A11y]}
         className="mySwiper"
        

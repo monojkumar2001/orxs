@@ -34,11 +34,17 @@
       --l-title: 60px;
       --p-font: 16px;
     }
+    .section-title{
+      line-height: 80px !important;
+    }
   }
   
   @media screen and (max-width: 768px) {
     :root {
       --l-title: 40px;
+    }
+    .section-title{
+      line-height: 60px !important;
     }
   }
   
