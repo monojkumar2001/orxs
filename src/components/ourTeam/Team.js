@@ -14,7 +14,7 @@ const Team = () => {
             "/images/team-3.svg",
           ];
           return `<img src=${texts[index]} class="${className}"/>`;
-        },
+        }, 
       };
   return (
     <>
