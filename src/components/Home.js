@@ -16,17 +16,16 @@ function Home() {
         <div className="container">
           <div className="hero-wrapper">
             <div className="hero-content">
-            <h1 className="section-title">
-            GET YOUR TOP NFT <span>WEBSITE HERE</span>
+              <h1 className="section-title">
+                The Orxs <span>Road to Redemption.</span>
               </h1>
               <div className="nav-list mint-now-btn">
-              <Link to="/mint" className="nav-link">
-                <img src="images/mint-bg-img.svg" alt="" />
-                <span>MINT NOW</span>
-              </Link>
+                <Link to="/mint" className="nav-link">
+                  <img src="images/mint-bg-img.svg" alt="" />
+                  <span>MINT NOW</span>
+                </Link>
+              </div>
             </div>
-            </div>
-  
           </div>
         </div>
         <div className="hero-bottom-img">
@@ -55,11 +54,29 @@ function Home() {
                 ABOUT <span>US</span>
               </h1>
               <p>
-                MTV SPACE APE is a revolutionary collection of 10,000 mutated
-                astronaut NFTs. Space Cadets will be deployed and function on
-                the Ethereum blockchain. These space-fairing NFTs will initially
-                be.
+                Their realm was one of war and destruction, ravaged by The Orxs.
+                These wretched beasts consumed everything and anything in their
+                path! Centuries of mass destruction, utter consumption and sheer
+                greed, left the lands bare, sparse and baron! The Orxs, born
+                with a mission instilled in them to demolish vegetation and
+                natural resources; the fear of these gruesome beasts, rebounded
+                throughout the realms.
               </p>
+              <p>
+                Storming through the Hell Fire mountains, The Orxs, stumbled
+                across an unusual source of light. It wasn’t the usual red flame
+                but a peculiar green beacon. The Orxs, could only do what they
+                do best, to take what wasn’t theirs. Unbeknown to them, this was
+                a portal and it transported their souls to The Metaverse.
+              </p>
+              <p>
+                Once transported their souls were cleansed, no longer did these
+                creatures want to be hated, or to destroy nature. The Orxs
+                wanted to put right their wrongs and give back to the Earth,
+                from which they were born. They wished to restore the Worlds
+                faith in their race. To redeem and revive is now their mission!.
+              </p>
+              <p>Are you willing to help them to repair this Earth?</p>
             </div>
             <div className="about-content row cpt-7">
               <div className="col-lg-4 col-md-6 col-sm-12">
@@ -196,9 +213,17 @@ function Home() {
             <div className="join-community-content  d-flex align-items-center justify-content-center flex-column w-60">
               <h1 className="section-title">JOIN OUR COMMUNITY</h1>
               <button className="discord-btn">
-                <img className="discord-btn-bg-img" src="/images/discord-btn-bg.svg" alt="" />
+                <img
+                  className="discord-btn-bg-img"
+                  src="/images/discord-btn-bg.svg"
+                  alt=""
+                />
                 <div className="discord-content">
-                  <img className="discord-img-icons" src="/images/discord-icon.svg" alt="" />
+                  <img
+                    className="discord-img-icons"
+                    src="/images/discord-icon.svg"
+                    alt=""
+                  />
                   <span>DISCORD</span>
                 </div>
               </button>

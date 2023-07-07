@@ -12,7 +12,6 @@ const Team = () => {
             "/images/team-1.svg",
             "/images/team-2.svg",
             "/images/team-3.svg",
-            "/images/team-4.svg",
           ];
           return `<img src=${texts[index]} class="${className}"/>`;
         },
@@ -39,9 +38,6 @@ const Team = () => {
             </SwiperSlide>
             <SwiperSlide>
             <TeamItem title='BlanadsdfkShy' img='/images/team-img-3.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
-            </SwiperSlide>
-            <SwiperSlide>
-            <TeamItem title='BlankSasdf dddhy' img='/images/team-img-4.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             
         </Swiper>

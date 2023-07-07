@@ -5,20 +5,24 @@ const FaqQuestion = () => {
 const data = {
   rows: [
     {
-      title: "WHAT IS NFT AND HOW DOES IT WORKS?",
-      content: "MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function "
+      title: "How many OrXs made it out of the realm?",
+      content: "2000 "
     },
     {
-      title: "WHAT IS NFT AND HOW DOES IT WORKS?",
-      content: "MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function "
+      title: "How much is it to grab one of these Eco Warriors?",
+      content: "Each one will be on sale for 0.5EGLD "
     },
     {
-      title: "WHAT IS NFT AND HOW DOES IT WORKS?",
-      content: "MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function "
+      title: "What is One Tree Planted?",
+      content: "They are a non-profit organization focused on global reforestation "
     },
     {
-      title: "WHAT IS NFT AND HOW DOES IT WORKS?",
-      content: "MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function "
+      title: "Will there be an Air Drop?",
+      content: "Yes, the OrXs will be Air Dropped, we will be promoting this through Twitter so keep an eye out for it. "
+    },
+    {
+      title: "I missed the mint, how can I own one?",
+      content: "They will be available through XPortal "
     }
     ]
 }
