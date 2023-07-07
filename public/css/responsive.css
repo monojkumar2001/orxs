@@ -92,6 +92,22 @@
         padding: 50px 50px 0 50px;
         height: auto;
     }
+    .team-item-right {
+        position: initial;
+        bottom: -5px;
+        right: 0px;
+    }
+    .team-item-left {
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .team-item-left h1 {
+        text-align: center;
+    }
+    .section-title-2 {
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 768px) {
     .hero-content {
@@ -223,6 +239,10 @@
     }
     .team-item-left {
         padding-left: 0px;
+    }
+    .section-title-2 {
+        font-size: 30px;
+        line-height: 40px;
     }
     .marquess{
         padding: 0;

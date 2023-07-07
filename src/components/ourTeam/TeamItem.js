@@ -5,7 +5,7 @@ const TeamItem = ({title, img, dis}) => {
     <>
       <div className="team-item">
         <div className="team-item-left">
-          <h1 className="section-title">{title}</h1>
+          <h1 className="section-title-2">{title}</h1>
           <p>{dis}</p>
         </div>
         <div className="team-item-right">

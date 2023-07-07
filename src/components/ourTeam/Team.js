@@ -31,13 +31,13 @@ const Team = () => {
         pagination={pagination}
         >
             <SwiperSlide>
-            <TeamItem title='BlankShy' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
+            <TeamItem title='Felicity Content Creator' img='/images/team-img-1.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-            <TeamItem title='BlankShysss' img='/images/team-img-2.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
+            <TeamItem title='Patrick Creative Artist' img='/images/team-img-2.svg' dis='MTV SPACE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             <SwiperSlide>
-            <TeamItem title='BlanadsdfkShy' img='/images/team-img-3.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
+            <TeamItem title='Ryan Everything Else' img='/images/team-img-3.svg' dis='MTV SPAasdfasfdfCE APE is a revolutionary collection of 10,000 mutated astronaut NFTs. Space Cadets will be deployed and function' />
             </SwiperSlide>
             
         </Swiper>
