@@ -1,40 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
+import Marque from "../components/marque/Marquee";
+import RoadmapItem from "../components/roadmap/RoadmapItem";
+import SwiperItem from "../components/swiper/SwiperItem";
+import CheckItItem from "../components/checkITItem/CheckItItem";
+import Team from "../components/ourTeam/Team";
+import FaqQuestion from "../components/faq/FaqQuestion";
+import About from "../components/about/About";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "../components/ErrorBoundary";
 
-import { Link } from "react-router-dom";
-import Marque from "./marque/Marquee";
-import RoadmapItem from "./roadmap/RoadmapItem";
-import SwiperItem from "./swiper/SwiperItem";
-import CheckItItem from "./checkITItem/CheckItItem";
-import Team from "./ourTeam/Team";
-import FaqQuestion from "./faq/FaqQuestion";
+const Intro = React.lazy(() => import("../components/Intro/Intro"));
 
 function Home() {
   return (
     <React.Fragment>
       {/* =================== Hero Section Start =================== */}
-      <div className="hero">
-        <div className="container">
-          <div className="hero-wrapper">
-            <div className="hero-content">
-              <h1 className="section-title">
-                The Orxs <span>Road to Redemption.</span>
-              </h1>
-              <div className="nav-list mint-now-btn">
-                <Link to="/mint" className="nav-link">
-                  <img src="images/mint-bg-img.svg" alt="" />
-                  <span>MINT NOW</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="hero-bottom-img">
-          <img src="images/hero-bottom-img.svg" alt="" />
-        </div>
-        <div className="hero-bottom-img2">
-          <img src="images/hero-bg-img-2.svg" alt="" />
-        </div>
-      </div>
+      <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => {}}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Intro />
+        </Suspense>
+      </ErrorBoundary>
       {/* =================== Hero Section End =================== */}
 
       {/* ===================== Marque Slider Start =============== */}
@@ -46,61 +31,7 @@ function Home() {
       {/* ===================== Marque Slider End   =============== */}
 
       {/* ================== About Section Start ================== */}
-      <section id="about" className="about cpb-6 cpt-7">
-        <div className="container">
-          <div className="about-wrapper">
-            <div className="about-header-content">
-              <h1 className="section-title">
-                ABOUT <span>US</span>
-              </h1>
-              <p>
-                Their realm was one of war and destruction, ravaged by The Orxs.
-                These wretched beasts consumed everything and anything in their
-                path! Centuries of mass destruction, utter consumption and sheer
-                greed, left the lands bare, sparse and baron! The Orxs, born
-                with a mission instilled in them to demolish vegetation and
-                natural resources; the fear of these gruesome beasts, rebounded
-                throughout the realms.
-              </p>
-              <p>
-                Storming through the Hell Fire mountains, The Orxs, stumbled
-                across an unusual source of light. It wasn’t the usual red flame
-                but a peculiar green beacon. The Orxs, could only do what they
-                do best, to take what wasn’t theirs. Unbeknown to them, this was
-                a portal and it transported their souls to The Metaverse.
-              </p>
-              <p>
-                Once transported their souls were cleansed, no longer did these
-                creatures want to be hated, or to destroy nature. The Orxs
-                wanted to put right their wrongs and give back to the Earth,
-                from which they were born. They wished to restore the Worlds
-                faith in their race. To redeem and revive is now their mission!.
-              </p>
-              <p>Are you willing to help them to repair this Earth?</p>
-            </div>
-            <div className="about-content row cpt-7">
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="about-list-item">
-                  <h3>PUBLIC SALE PRICE</h3>
-                  <span>TBA</span>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="about-list-item">
-                  <h3>PRESALE PRICE</h3>
-                  <span>TBA</span>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="about-list-item">
-                  <h3>TOTAL SUPPLY</h3>
-                  <span>11,111</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
       {/* ================== About Section End ================== */}
 
       {/* ================== Roadmap Section Start ================== */}
