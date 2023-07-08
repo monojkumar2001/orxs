@@ -1,15 +1,17 @@
 import React, { useState, Suspense } from "react";
-import Marque from "../components/marque/Marquee";
 import RoadmapItem from "../components/roadmap/RoadmapItem";
-import SwiperItem from "../components/swiper/SwiperItem";
-import CheckItItem from "../components/checkITItem/CheckItItem";
 import Team from "../components/ourTeam/Team";
 import FaqQuestion from "../components/faq/FaqQuestion";
-import About from "../components/about/About";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "../components/ErrorBoundary";
 
 const Intro = React.lazy(() => import("../components/Intro/Intro"));
+const Marque = React.lazy(() => import("../components/marque/Marquee"));
+const About = React.lazy(() => import("../components/about/About"));
+const SwiperItem = React.lazy(() => import("../components/swiper/SwiperItem"));
+const CheckItItem = React.lazy(() =>
+  import("../components/checkITItem/CheckItItem")
+);
 
 function Home() {
   return (
@@ -25,17 +27,27 @@ function Home() {
       {/* ===================== Marque Slider Start =============== */}
       <section className="marque cpb-6 ">
         <div className="marque-wrapper">
-          <Marque />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Marque />
+          </Suspense>
         </div>
       </section>
       {/* ===================== Marque Slider End   =============== */}
 
       {/* ================== About Section Start ================== */}
-      <About />
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <About />
+      </Suspense>
       {/* ================== About Section End ================== */}
 
       {/* ================== Roadmap Section Start ================== */}
-      <section id="roadmap" className="roadmap cpt-7 cpb-6">
+      <section
+        id="roadmap"
+        className="roadmap cpt-7 cpb-6"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="container">
           <div className="roadmap-wrapper">
             <h1 className="section-title">ROADMAP</h1>
@@ -82,27 +94,40 @@ function Home() {
       {/* ================== Roadmap Section End ================== */}
 
       {/* ========================== Swiper Start ======================== */}
-      <section className="swiper cpb-6">
+      <section
+        className="swiper cpb-6"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="container">
           <div className="swiper-wrappers">
-            <SwiperItem />
+            <Suspense fallback={<div>Loading...</div>}>
+              <SwiperItem />
+            </Suspense>
           </div>
         </div>
       </section>
       {/* ========================== Swiper End ========================== */}
 
       {/* =================== Card Items Start  ============ */}
-      <section className="check-it">
+      <section className="check-it" data-aos="fade-up" data-aos-duration="2000">
         <div className="container">
           <div className="check-it-wrapper row">
-            <CheckItItem />
+            <Suspense fallback={<div>Loading...</div>}>
+              <CheckItItem />
+            </Suspense>
           </div>
         </div>
       </section>
       {/* =================== Card Items End ============ */}
 
       {/* ====================== Our Team Start ======================== */}
-      <section id="team" className="team cpb-6">
+      <section
+        id="team"
+        className="team cpb-6"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="container">
           <div className="team-wrapper">
             <h1 className="section-title">OUR TEAM</h1>
@@ -115,15 +140,26 @@ function Home() {
       {/* ====================== Our Team End ======================== */}
 
       {/* ===================== Marque Slider Start =============== */}
-      <section className="marque  cpb-6  marquess">
+      <section
+        className="marque  cpb-6  marquess"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="marque-wrapper">
-          <Marque />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Marque />
+          </Suspense>
         </div>
       </section>
       {/* ===================== Marque Slider End   =============== */}
 
       {/* ================== FAQ Start ======================= */}
-      <section id="faq " className="faq cpb-6">
+      <section
+        id="faq "
+        className="faq cpb-6"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="container">
           <div className="faq-wrapper">
             <h1 className="section-title">
@@ -138,7 +174,12 @@ function Home() {
       </section>
       {/* ================== FAQ End ======================= */}
       {/* =============== Join Community Start ===================== */}
-      <section id="join-community" className="join-community cpb-6">
+      <section
+        id="join-community"
+        className="join-community cpb-6"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="container">
           <div className="join-community-wrapper">
             <div className="join-community-content  d-flex align-items-center justify-content-center flex-column w-60">
